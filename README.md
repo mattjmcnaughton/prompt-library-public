@@ -23,6 +23,8 @@ ln -sf /path/to/prompt-library/prompts/agentic-coding/commands ~/.cursor/command
 ln -sf /path/to/prompt-library/prompts/agentic-coding/commands ~/.codex/prompts
 
 ln -sf /path/to/prompt-library/prompts/agentic-coding/agents ~/.claude/agents
+
+ln -sf /path/to/prompt-library/prompts/skills ~/.claude/skills
 ```
 
 ### Rsync
@@ -32,6 +34,7 @@ rsync -azv --delete /path/to/prompt-library/prompts/agentic-coding/commands/ ~/.
 rsync -azv --delete /path/to/prompt-library/prompts/agentic-coding/commands/ ~/.codex/prompts/
 
 rsync -azv --delete /path/to/prompt-library/prompts/agentic-coding/agents/ ~/.claude/agents/
+rsync -azv --delete /path/to/prompt-library/prompts/skills/ ~/.claude/skills/
 ```
 
 ## Building Skills
